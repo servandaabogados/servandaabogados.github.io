@@ -214,7 +214,7 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #8B0000;
+  color: #8b0000;
   text-decoration: none;
 }
 
@@ -2295,8 +2295,8 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-  background: #666;
-  border-color: #666;
+  background: rgb(95, 0, 0);
+  border-color: rgb(95, 0, 0);
   color: #ffffff;
   content: "\f00c";
 }
@@ -2489,7 +2489,7 @@ input[type="radio"] + label:before {
 }
 
 .icon.major {
-  background: #666;
+  background: rgb(95, 0, 0);
   border-radius: 100%;
   color: #ffffff;
   cursor: default;
@@ -2505,7 +2505,7 @@ input[type="radio"] + label:before {
 }
 
 .icon.major.accent1 {
-  background: #666;
+  background: rgb(95, 0, 0);
   color: #ffffff;
 }
 
@@ -2832,7 +2832,7 @@ input[type="button"],
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #666;
+  background-color: rgb(95, 0, 0);
   border-radius: 6px;
   border: 0;
   color: #ffffff;
@@ -2979,6 +2979,8 @@ body.landing #page-wrapper {
 
 .title {
   padding-left: 3em;
+  padding-top: 55px;
+  margin-top: -55px;
 }
 
 @-moz-keyframes reveal-header {
@@ -3022,7 +3024,7 @@ body.landing #page-wrapper {
 }
 
 #header {
-  background: #444;
+  background: rgb(95, 0, 0);
   color: #bbb;
   cursor: default;
   height: 3.25em;
@@ -3259,13 +3261,13 @@ body.landing #page-wrapper {
 
 #banner {
   background-attachment: scroll, fixed;
-  background-color: #666;
+  background-color: rgb(95, 0, 0);
   background-image: url("images/overlay.png"), url("../images/pic01.jpg");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   color: #fff;
-  padding: 12em 0 20em 0;
+  padding: 10em 0 15em 0;
   text-align: center;
 }
 
@@ -3322,14 +3324,13 @@ body.landing #page-wrapper {
 #banner input[type="button"].primary,
 #banner .button.primary {
   background: #fff;
-  color: #666 !important;
+  color: #rgb(95, 0, 0) !important;
 }
 
 /* Main */
 
 #main {
   padding: 4em 0;
-
 }
 
 #main > header {
@@ -3358,9 +3359,10 @@ body.landing #main {
 /* Footer */
 
 #footer {
-  background: #f0f0f0;
+  background: rgb(95, 0, 0);
   padding: 4em 0 6em 0;
   text-align: center;
+  border-radius: 0.5em;
 }
 
 #footer .icons a {
@@ -3376,7 +3378,7 @@ body.landing #main {
 }
 
 #footer .copyright {
-  color: rgba(139, 0, 0, 0.5);
+  color: #dddddd;
   font-size: 0.9em;
   line-height: 1em;
   margin: 2em 0 0 0;
@@ -3487,7 +3489,7 @@ body.landing #main {
   /* Banner */
 
   #banner {
-    padding: 10em 0 18em 0;
+    padding: 7em 0 15em 0;
   }
 }
 
