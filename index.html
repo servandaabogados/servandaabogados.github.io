@@ -155,7 +155,7 @@
 						</div>
 
 						<div class="col-6 col-12-narrower">
-							<form method="post" action="mail.php">
+							<form method="POST" action="https://formspree.io/sevandabogados@gmail.com">
 								<div class="row gtr-50 gtr-uniform">
 									<div class="col-12">
 										<input type="text" name="name" id="name" value="" placeholder="Nombre" />
@@ -175,7 +175,7 @@
 									</div>
 									<div class="col-12">
 										<ul class="actions special">
-											<li><input type="submit" value="Enviar" onclick="validateForm()"/></li>
+											<li><input type="submit" value="Enviar"/></li>
 										</ul>
 									</div>
 								</div>
@@ -208,37 +208,6 @@
 	<script src="js/breakpoints.min.js"></script>
 	<script src="js/util.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/mdb.min.js"></script>
-
-	<script>
-		document.getElementById('status').innerHTML = "Sending...";
-		formData = {
-			'name': $('input[name=name]').val(),
-			'email': $('input[name=email]').val(),
-			'subject': $('input[name=subject]').val(),
-			'message': $('textarea[name=message]').val()
-		};
-
-
-		$.ajax({
-			url: "mail.php",
-			type: "POST",
-			data: formData,
-			success: function (data, textStatus, jqXHR) {
-
-				$('#status').text(data.message);
-				if (data.code) //If mail was sent successfully, reset the form.
-					$('#contact-form').closest('form').find("input[type=text], textarea").val("");
-			},
-			error: function (jqXHR, textStatus, errorThrown) {
-				$('#status').text(jqXHR);
-			}
-		});
-
-	</script>
 </body>
 
 </html>
